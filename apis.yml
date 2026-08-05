@@ -1,7 +1,19 @@
 aid: trust-will
 name: Trust & Will
-description: 'Trust & Will is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Trust & Will is a San Diego-based digital estate planning and probate
+  company that lets individuals and families create legally valid wills, revocable
+  living trusts, guardianship documents and probate filings online, with attorney-drafted
+  state-specific documents and notarization support. Alongside its direct-to-consumer
+  product it runs an enterprise and professional channel — EstateOS, plus programs
+  for financial advisors, estate attorneys, nonprofits, banks and credit unions —
+  that embeds estate planning into partner client experiences. The company reports
+  more than one million members and 200+ enterprise partners including AARP, Fifth
+  Third Bank, LPL Financial, UBS and USAA. Its EstateOS launch announcement states
+  that an open API, MCP server and SDKs for enterprise integration are planned, but
+  as of this profile no public developer portal, API reference or machine-readable
+  specification is published — partner integration runs through a sales and partnership
+  conversation.'
+image: https://trustandwill.com/images/trust-and-will-logo.png
 url: https://raw.githubusercontent.com/api-evangelist/trust-will/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
@@ -12,6 +24,13 @@ created: '2026-08-05'
 modified: '2026-08-05'
 tags:
 - Company
+- Estate Planning
+- Wills And Trusts
+- Probate
+- Legal
+- Financial Services
+- Wealth Management
+- Fintech
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +38,58 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: TrustCenter
+  url: security/trust-will-trust-center.yml
+- type: VulnerabilityDisclosure
+  url: security/trust-will-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/trust-will-domain-security.yml
 - type: Website
+  url: https://trustandwill.com/
+- type: SecondaryMarket
   url: https://forgeglobal.com/trust-will_stock/
+- type: Support
+  url: https://help.trustandwill.com/hc/en-us/
+- type: Blog
+  url: https://trustandwill.com/learn/
+- type: Pricing
+  url: https://trustandwill.com/compare
+- type: SignUp
+  url: https://trustandwill.com/get-started
+- type: Login
+  url: https://app.trustandwill.com/login
+- type: TermsOfService
+  url: https://trustandwill.com/security/terms
+- type: PrivacyPolicy
+  url: https://trustandwill.com/security/privacy-policy
+- type: Security
+  url: https://trustandwill.com/security
+- type: Compliance
+  url: https://trustandwill.com/security
+- type: Conformance
+  url: conformance/trust-will-conformance.yml
+- type: LLMsTxt
+  url: llms/trust-will-llms.txt
+x-enrichment:
+  date: '2026-08-05'
+  status: minimal
+  artifacts_added: 6
+  pass: local-v1
+x-coverage:
+  state: gated
+  reason: sales-gate
+  detail: Trust & Will's own EstateOS launch announcement promises an "open API, MCP,
+    and SDKs for enterprise integration" and api.trustandwill.com is a live first-party
+    API host, but every documentation and discovery path on it 404s and the only route
+    to it is the partnerships contact-sales form — there is no public developer portal,
+    reference, or specification anywhere on the domain.
+  evidence:
+  - url: https://trustandwill.com/learn/estateos-launch-announcement
+    status: 200
+  - url: https://api.trustandwill.com/openapi.json
+    status: 404
+  - url: https://api.trustandwill.com/.well-known/oauth-authorization-server
+    status: 404
+  - url: https://trustandwill.com/llms.txt
+    status: 404
+  checked: '2026-08-05'

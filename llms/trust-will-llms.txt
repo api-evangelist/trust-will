@@ -1,0 +1,48 @@
+# Trust & Will
+
+> Trust & Will is a San Diego-based digital estate planning and probate company. It lets individuals and families create legally valid wills, revocable living trusts, guardianship documents and probate filings online, with attorney-drafted state-specific documents and notarization support. It also runs an enterprise and professional channel — EstateOS, plus programs for financial advisors, estate attorneys, nonprofits, banks and credit unions — that embeds estate planning into partner client experiences.
+
+<!--
+generated: 2026-08-05
+method: generated
+source: apis.yml + API Evangelist enrichment pass (trustandwill.com/llms.txt returned 404)
+-->
+
+## API status
+
+- Trust & Will publishes **no public developer portal, API reference, or machine-readable specification** as of 2026-08-05.
+- The EstateOS launch announcement states that an "open API, MCP, and SDKs for enterprise integration" are planned. No such surface was reachable anonymously.
+- `https://api.trustandwill.com/` is a live application host that answers with a JSON error envelope, but every documentation and discovery path probed returned 404.
+- Enterprise/partner integration runs through the partnerships sales channel, not a self-service developer signup.
+
+## Company
+
+- [Trust & Will](https://trustandwill.com/): Home — digital wills, trusts, guardianship and probate.
+- [Pricing / compare plans](https://trustandwill.com/compare): Plan comparison and pricing.
+- [Get started](https://trustandwill.com/get-started): Sign up.
+- [Sign in](https://app.trustandwill.com/login): Member application login.
+- [Learn](https://trustandwill.com/learn/): Blog, guides and estate planning education.
+- [Help center](https://help.trustandwill.com/hc/en-us/): Support.
+
+## Partner and professional channels
+
+- [Partnerships](https://trustandwill.com/partnerships/): Enterprise, bank, credit union and nonprofit partner program.
+- [For advisors](https://trustandwill.com/advisors/): Financial advisor program.
+- [For attorneys](https://trustandwill.com/professionals/attorneys): Estate attorney platform.
+- [EstateOS launch announcement](https://trustandwill.com/learn/estateos-launch-announcement): The platform announcement that names a planned open API, MCP server and SDKs.
+
+## Security, trust and legal
+
+- [Security & compliance](https://trustandwill.com/security): SOC 2 Type II, HIPAA examination, AES-256 at rest, TLS 1.2 in transit, security@trustandwill.com for disclosure.
+- [Terms of service](https://trustandwill.com/security/terms)
+- [Privacy policy](https://trustandwill.com/security/privacy-policy)
+- [Accessibility statement](https://trustandwill.com/security/accessibility-statement)
+
+## API Evangelist artifacts
+
+- [apis.yml](https://raw.githubusercontent.com/api-evangelist/trust-will/refs/heads/main/apis.yml): This provider profile.
+- [Domain security](https://raw.githubusercontent.com/api-evangelist/trust-will/refs/heads/main/security/trust-will-domain-security.yml): Probed TLS/HSTS/DNSSEC/SPF/DMARC.
+- [Vulnerability disclosure](https://raw.githubusercontent.com/api-evangelist/trust-will/refs/heads/main/security/trust-will-vulnerability-disclosure.yml)
+- [Trust center](https://raw.githubusercontent.com/api-evangelist/trust-will/refs/heads/main/security/trust-will-trust-center.yml)
+- [Conformance](https://raw.githubusercontent.com/api-evangelist/trust-will/refs/heads/main/conformance/trust-will-conformance.yml)
+- [Well-known probe record](https://raw.githubusercontent.com/api-evangelist/trust-will/refs/heads/main/well-known/trust-will-well-known.yml)

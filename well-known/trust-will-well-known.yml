@@ -1,0 +1,43 @@
+generated: '2026-08-05'
+method: probed
+source: live GET probes of the /.well-known/ surface on every Trust & Will host
+note: No /.well-known/ document was found on any Trust & Will host. Recorded as evidence
+  so a later round does not re-declare this unprobed. The marketing host answers every
+  unknown path with a Next.js 404 HTML shell; the application API host answers with
+  a JSON 404 envelope.
+hosts:
+- host: https://trustandwill.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+  - path: /llms.txt
+    status: 404
+- host: https://api.trustandwill.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+found: 0

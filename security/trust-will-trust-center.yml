@@ -1,0 +1,24 @@
+generated: '2026-08-05'
+method: searched
+probe: true
+source: https://trustandwill.com/security
+url: https://trustandwill.com/security
+certifications:
+- SOC 2 Type II
+- HIPAA
+attestations:
+- BBB Accredited Business
+controls:
+- encryption at rest: AES-256
+- encryption in transit: TLS 1.2 (DigiCert certificate)
+- infrastructure: Amazon Web Services
+dedicated_trust_portal: false
+notes: Trust & Will publishes its security and compliance posture on a marketing security
+  page rather than a dedicated trust portal; trust.trustandwill.com returned 403 to
+  an anonymous fetch.
+evidence:
+- source: https://trustandwill.com/security
+  keywords:
+  - soc 2
+  - soc2
+  - hipaa
