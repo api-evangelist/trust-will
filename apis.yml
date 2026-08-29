@@ -13,6 +13,17 @@ description: 'Trust & Will is a San Diego-based digital estate planning and prob
   as of this profile no public developer portal, API reference or machine-readable
   specification is published — partner integration runs through a sales and partnership
   conversation.'
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://trustandwill.com/images/trust-and-will-logo.png
 url: https://raw.githubusercontent.com/api-evangelist/trust-will/refs/heads/main/apis.yml
 x-type: company
