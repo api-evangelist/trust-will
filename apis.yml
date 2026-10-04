@@ -51,7 +51,7 @@ tags:
 - Wills And Trusts
 - Probate
 - Legal
-- Financial-Services
+- Financial Services
 - Wealth Management
 - Fintech
 tags_raw:
@@ -63,6 +63,7 @@ tags_raw:
 - Financial Services
 - Wealth Management
 - Fintech
+- Financial-Services
 apis: []
 maintainers:
 - FN: Kin Lane
